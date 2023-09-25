@@ -1,0 +1,128 @@
+*{
+    background-color: #cbc8c8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+#div1{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#div2{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+   }
+   h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+#div3{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#image1{
+    border-left: dotted;
+}
+
+#image2{
+    border-left: dotted;
+}
+
+#image3{
+    border-left: dotted;
+}
+
+p{
+    text-align: center;
+    size: larger;
+}
+
+table{
+    margin-left: 400px;
+    border-collapse: collapse;
+   
+}
+table tr th{
+    background-color: #4B4A4A;
+   border:none;
+}
+table tr td {
+    text-align: center;
+   border:none;
+   background-color: rgb(178, 189, 189);
+}
+ td:hover{
+    color: rgb(154, 9, 9);
+    background-color: aliceblue;
+    font-weight: 600;
+    
+ }
+tr:hover{
+ border-style: solid;
+ border-bottom-right-radius: 12;
+ }
+
+ #H1{
+    text-align: start;
+ }
+
+ #H2{
+    text-align: start;
+ }
+ #P1{
+    text-align: start;
+    padding-right: 300;
+ }
+
+ #p2{
+    text-align: start;
+    padding-right: 300;
+ }
+ 
+#input{
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin-left:908px;
+    border: none;
+}
+#input:hover{
+    background-color:rgb(41, 41, 41) ;
+    font-weight: 400;
+     
+}
+#input:focus{
+    background-color: rgb(157, 168, 164);
+}
+#button{
+   background-color: rgb(255, 255, 255);
+}
+
+#button:active{
+    background-color: rgb(178, 189, 189) ;
+}
+
+#div4{
+    border: solid;
+    border-radius:2%;
+}
+
+#div5{
+  background-color: black;
+}
+
+#email{
+    display: block;
+    margin-left: 25px;
+    padding-right: 730PX;
+    font-size: 20;
+    
+}
+
+#phone{
+    margin-left: 25px;
+    padding-right: 730PX;
+    font-size: 20;
+}
