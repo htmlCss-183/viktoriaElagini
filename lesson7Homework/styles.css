@@ -1,0 +1,136 @@
+
+.Navmenu {
+   top:0;
+   padding:5px;
+   background-color: rgb(165, 5, 5);
+   position:sticky;
+   display: flex;
+   justify-content: center;
+
+}
+
+.Navmenu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.Navmenu a:hover{
+    background-color: #4b0303;
+    font-weight: 600;
+   
+    
+    
+}
+
+.Div{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+padding-left: 200;
+display: block;
+}
+
+
+#h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+}
+
+table{
+    border:solid;
+    border-radius: px;
+    border-collapse: collapse;
+   border-width: 2;
+   }
+table tr{
+background-color: #d69393;
+border-bottom: solid;
+border-width: 2;
+
+}
+
+
+table th{
+    border-radius: px;
+    background-color: antiquewhite;
+border:solid;    
+}
+
+table td{
+    border-radius: px;
+    padding:10;
+    border:solid;
+}
+
+p{
+    padding-right:100px;
+   }
+ table td:hover{
+    background-color: azure;
+    font-weight: 600;
+}
+img{
+    border-radius: 10px;
+}
+
+ div h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav2{
+    position: fix;
+}
+
+#input{
+    padding-top: 8;
+    padding-bottom: 90;
+    padding-right: 100;
+    border-radius: 8px;
+    position: relative;
+    left:200;
+}
+
+h5{
+    padding-left: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-regular{
+    position: relative;
+    left:200;
+    
+}
+
+#send{
+position: relative;
+left:340 ;
+background-color: rgb(255, 0, 0);
+color:rgb(255, 255, 255);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border-radius: 5px;
+}
+
+#danger{
+    position: relative;
+    left:200 ;
+    background-color:green;
+   color:white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border-radius: 5px;
+}
+
+.footer{
+    background-color: rgb(165, 5, 5);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display: flex;
+justify-content: space-between;
+padding-left: 300;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+ 
+  
