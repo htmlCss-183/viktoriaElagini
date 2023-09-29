@@ -1,0 +1,9 @@
+.fixed{
+    position:fixed;
+    background-color: aquamarine;
+    left: 100px;px;
+}
+
+p {
+    color: blue;
+}

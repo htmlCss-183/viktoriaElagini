@@ -1,0 +1,23 @@
+.a {
+    width:200px;
+    height:100px;
+    background-color: yellow;
+    transform:rotate(20deg)
+}
+
+.b {
+    width:200px;
+    height:100px;
+    background-color: yellow;
+    transform:skewX(20deg);
+
+}
+
+.c {
+    width:200px;
+    height:100px;
+    background-color: yellow;
+    transform:scaleX(2);
+    transform: scaleY(2);
+
+}
