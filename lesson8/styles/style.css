@@ -1,0 +1,46 @@
+div{
+    width:100px;
+    height:100px;
+    background: green;
+    transition: width 3s,height 3s;
+}
+
+div:hover{
+    width:100px;
+    height:100px;
+    background: red;
+    transition: width 2s;
+    transition-delay: 2s;
+}
+
+
+#div1{
+    transition-timing-function: linear;
+}
+
+#div2{
+    transition-timing-function: ease;
+
+}
+
+#div3{
+    transition-timing-function: ease-in;
+}
+
+#div4{
+    transition-timing-function:ease-out ;
+}
+
+#div5{
+    transition-timing-function: ease-in-out;
+}
+
+div:hover{
+    width:300px;
+}
+
+body{
+    background-image: url("https://i.pinimg.com/236x/f7/2a/76/f72a76a8cc6703882ab57621297b81d0.jpg"), url("https://img.freepik.com/premium-vector/mexican-style-abstract-background-seamless-vector-pattern-illustration-black-orange-colors_79202-465.jpg");
+    background-size: 100px 100px;
+    background-color: rgb(8, 96, 172);
+}
