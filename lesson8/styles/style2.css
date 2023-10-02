@@ -1,0 +1,34 @@
+div{
+    width:100px;
+    height: 100px;
+    background-color: skyblue;
+    animation-name: example3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    position:relative;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    from{background-color: rgb(41, 169, 41);}
+    to{background-color: rgb(120, 21, 82);}
+}
+ 
+@keyframes example2{
+    0%{background-color: rgb(74, 138, 164);}
+    25%{background-color: blueviolet;}
+    50%{background-color: rgb(120, 33, 94);}
+    75%{background-color: brown;}
+    100%{background-color: pink;}
+}
+
+@keyframes example3{
+    0%{background-color: rgb(74, 138, 164);left: 0px;top:0px;}
+    25%{background-color: blueviolet;left: 200px; top:0px;}
+    50%{background-color: rgb(120, 33, 94);left: 200px; top: 200px;}
+    75%{background-color: brown; left: 0px; top: 200px;}
+    100%{background-color: pink;left: 0px; top: 0px;}
+}
+/* p{
+    position: absolute;
+} */
