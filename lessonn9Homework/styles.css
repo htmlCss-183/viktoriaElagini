@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Merriweather:ital,wght@1,300&family=Onest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ li a:hover{
+    font-weight: 600;
+    background-color: #717171;
+    border-radius: 7px;
+    padding:5px;
+   
+}
+.navbar{
+    background-color:#ADA6A6;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color: white; */
+    border-radius: 5cm;
+    text-shadow: 1px 2px 5px black;
+}
+.logo{
+    font-size: x-large;
+    text-shadow: none;
+}
+
+ul button{
+    color: aliceblue;
+    background-color: black;
+    font-size: large;
+    border-radius: 5cm;
+    border-style: none;
+    padding:5px;
+}
+
+ul button:hover{
+background-color: #717171;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    font-size:large;
+    margin-right:30px;
+}
+
+#runningstring{
+ width: 1000;
+background-color:#565556;
+color:white;
+animation-name:string ;
+animation-direction: reverse;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+text-align: center;
+transition-timing-function: linear;
+padding-left: 300;
+padding-right: 221;
+}
+
+@keyframes string{
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(200%);
+        
+      }
+      to {
+        -moz-transform: translateX(-200%);
+        -webkit-transform: translateX(-100%);
+        
+      }
+    }
+ .title{
+    margin-left:300;
+    font-family: 'Onest', sans-serif;
+ }
+ main{
+     margin-left:300;
+     margin-right:300;
+     font-family: 'Onest', sans-serif;
+ }
+
+ main h3{
+    font-size:larger ;
+ }
+ main article{
+    font-size: larger;
+ }
+
+ .footer1{
+    color: black;
+ }
+
+
+ .fa-solid{
+    position: relative;
+    top:40;
+ }
+ 
+ .fa-brands{
+    font-size: x-large;
+
+   
+   
+ }
+
+#alink{
+    color:black
+}
+
+
+.title1{
+    margin-left: 20;
+}
+
+.title1 h3{
+    margin-left: 30;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ADA6A6;
+    font-family: 'Nunito', sans-serif;
+    padding-right: 40;
+}
+.footer h4{
+    font-size: larger;
+    text-shadow: 1px 2px 3px black;
+}
+
+.footer a:hover{
+    font-weight: 600;
+    text-shadow: 1px 2px 4px rgb(55, 54, 54);
+}
+
+#button1{
+    background-color: #ADA6A6;
+   
+}

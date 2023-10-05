@@ -1,0 +1,256 @@
+
+#shadow-1{
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 3px #26008d ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(227, 242, 251);
+}
+
+#image1:hover{
+height: 300px;
+transition: 2s;
+border-radius: 500px;
+transform: rotate(-20deg);
+
+}
+
+#image2:hover{
+    height: 300px;
+    transition: 2s;
+    border-radius: 500px;
+    /* transform: rotate(20deg); */
+    margin-top: 20;
+}
+
+#image3:hover{
+    height: 300px;
+    transition: 2s;
+    border-radius: 500px;
+   transform: rotate(20deg);
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(227, 242, 251);
+}
+
+#p-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* .runningstring{
+    position: relative;
+    background-color: #26008d;
+    color: aliceblue;
+    width:750px;
+    margin-left: 55;
+    animation-name: string;
+    animation-direction: reverse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes string {
+    from{background-color: aqua;left:100px;}
+    to{background-color: rgb(11, 99, 70);}
+} */
+/* @keyframes string{
+    
+} */
+
+#runningstring{
+width: 1000;
+background-color:#26008d;
+color:white;
+animation-name:string ;
+animation-direction: reverse;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+text-align: center;
+transition-timing-function: ease-in;
+}
+@keyframes string{
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(200%);
+        
+      }
+      to {
+        -moz-transform: translateX(-200%);
+        -webkit-transform: translateX(-100%);
+        
+      }
+}
+
+.list {
+   text-align: center;
+   background-color: rgb(227, 242, 251);
+   font-size: large;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   height: max-content;
+
+   
+  }
+.lisst {
+    display: inline-block;
+    text-align: left;
+    font-size: x-large;
+  }
+
+  
+ 
+  a{
+    color:#AAB5BC;
+  }
+  a:hover{
+    color:black;
+    font-weight: 500;
+  }
+#link1:visited{
+    color:red;
+}
+  #imgdubai{
+    position: relative;
+   right: 230px;
+   bottom:340;
+   border-radius: 100px;
+  }
+
+  #imgdubai:hover{
+    width: 500px;
+    transition: 2s;
+    border-radius: 0%;
+  }
+ 
+  #imgparis{
+    position: relative;
+    left:240;
+    bottom:340;
+    border-radius: 100px;
+  }
+
+  #imgparis:hover{
+    width: 500px;
+    transition: 2s;
+    border-radius: 0px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  table th{
+    background-color:#ECE3FB;
+  }
+table td{
+    background-color: #FBE3E6;
+    padding:10px;
+}
+
+.tables{
+    display: flex;
+    justify-content: space-around;
+    background-color: #E3E6FB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer1{
+    display: flex;
+    position: relative;
+    padding-left:59px;
+    background-color: rgb(190, 179, 240);
+}
+
+#title{
+  position: relative;
+  bottom: 19px;
+  left:5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  padding-top: 10;
+  color:white;
+}
+
+#icon{
+  font-size: larger;
+  padding-top: 10;
+}
+
+#icons{
+  position: relative ;
+  left: 1090px;
+  font-size: x-large;
+  padding-top: 10;
+
+}
+
+#button{
+  padding-left: 54;
+  padding-right: 55;
+  color: white;
+  background-color: #26008d;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10;
+  
+}
+
+#button:hover{
+  color: #26008d;
+  background-color: white;
+}
+
+.footer2{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #aea0d3;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.footer2 h4{
+  text-decoration-line: overline;
+  font-size: larger;
+}
+
+.footer2 a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer2 a:hover{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+#input{
+  border:solid;
+ background-color: #aea0d3;
+ border-color: aliceblue;
+}
+
+.footer3{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(190, 179, 240) ;
+  color: white;
+  
+}
+
+.footer3 a{
+  text-decoration: none;
+  color: white;
+}
+
+#services{
+  position: relative;
+  right: 80;
+}
+
+.info{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 200;
+  margin-right: 200;
+  background-color: rgb(227, 242, 251);
+}

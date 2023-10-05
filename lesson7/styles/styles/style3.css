@@ -1,0 +1,9 @@
+.sticky{
+    position:sticky ;
+    top:5px;
+    padding:5px;
+    border-color:antiquewhite;
+    border:2px solid rgb(189, 36, 174);
+    background-color: rgb(164, 164, 240);
+    
+}

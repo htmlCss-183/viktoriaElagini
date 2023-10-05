@@ -1,0 +1,18 @@
+.absolute{
+    position:absolute;
+    top:50px;
+    padding:5px;
+    border-color:antiquewhite;
+    border:2px solid rgb(189, 36, 174);
+    background-color: rgb(164, 164, 240);
+    
+}
+
+.relative {
+    position: absolute;
+    top: 50px;
+    padding: 5px;
+    border-color: blanchedalmond;
+    border: 2px solid rgb(222, 255, 4);
+    background-color: rgb(255, 127, 217);
+}
