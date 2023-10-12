@@ -1,0 +1,174 @@
+
+:root{
+    --font-family:'Gabarito';
+    --color:white;
+}
+@font-face {
+    font-family: 'Gabarito';
+    src: url(/fonts/Gabarito-Medium.ttf);
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(44, 44, 46);
+}
+
+.navbar{
+    padding-right: 15px;
+    padding-left: 15px;
+    position:sticky;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-shadow: 1px 2px 3px black;
+    background-color: black;
+    padding: 10px;
+    font-family: 'Gabarito';
+    font-size: larger;
+   
+    
+}
+
+ a{
+    text-decoration: none;
+    color: white;
+    
+ }
+
+ li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60;
+    text-shadow: 1px 3px 3px gray;
+ }
+
+ li:hover{
+    background-color: rgb(40, 40, 40);
+    border-radius:5px;
+    text-shadow: 1px 2px 3px;
+    padding:5px;
+ }
+
+.logo{
+    font-size: x-large;
+    text-shadow: 1px 3px 3px gray;
+    color: white;
+}
+
+
+.slider{
+    width: 970px;
+    height: 546px;
+    background: url(https://scottmautz.com/wp-content/uploads/2020/11/Untitled-design-123-970x546-1.jpg);
+    margin: 30 auto;
+    -webkit-animation: slide 15s infinite ;
+            animation: slide 15s infinite ;
+    border-radius: 5cm;
+    -webkit-box-shadow: 5px 5px 5px rgb(66, 64, 64);
+            box-shadow: 5px 5px 5px rgb(66, 64, 64);
+    
+    
+}
+
+@-webkit-keyframes slide{
+
+
+    25%{
+        background: url(/images/earth.jpg);
+        
+    }
+    50%{
+        background: url(/images/Mars-terraforming-FI-970x546.jpg);
+    }
+    75%{
+        background: url(/images/pexels-zch-12498752-970x546.jpg);
+    }
+    100%{
+        background: url(/images/saturn.jpg);
+    }
+}
+
+@keyframes slide{
+
+
+    25%{
+        background: url(/images/earth.jpg);
+        
+    }
+    50%{
+        background: url(/images/Mars-terraforming-FI-970x546.jpg);
+    }
+    75%{
+        background: url(/images/pexels-zch-12498752-970x546.jpg);
+    }
+    100%{
+        background: url(/images/saturn.jpg);
+    }
+}
+
+h1{
+   font-family: var(--font-family);
+   text-align: center;
+   color:var(--color)
+}
+h1::-moz-selection{
+    color:black;
+    background-color: aliceblue;
+}
+h1::selection{
+    color:black;
+    background-color: aliceblue;
+}
+p{
+    font-family: var(--font-family);
+    color:var(--color);
+    text-align:start;
+    padding-left:100px;
+    padding-right:100px; 
+    font-size:larger 
+}
+p::-moz-selection{
+    color:black;
+    background-color: aliceblue;
+}
+p::selection{
+    color:black;
+    background-color: aliceblue;
+}
+p::first-letter{
+    font-size: xx-large;
+  
+}
+
+.gridTable{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:auto 10px auto 10px auto;
+    grid-template-columns:auto auto auto;
+    padding: 15px;
+    background-color: rgb(3, 73, 30);
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 10px;
+    
+}
+.grid-item {
+    border: 1px solid rgb(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--color);
+   
+  }
+
+  #ptext{
+    font-size: medium;
+  }
