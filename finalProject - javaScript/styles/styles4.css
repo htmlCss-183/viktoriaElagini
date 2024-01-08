@@ -6,11 +6,6 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
-
-@font-face {
-    font-family: myfont;
-    src: url(/fonts/_mtavruli.ttf);
-}
 @font-face {
     font-family: unicode;
     src: url(/fonts/3d_unicode.ttf);
@@ -80,36 +75,41 @@ header{
         -ms-flex-direction: column;
             flex-direction: column;
 }
- main h1{
-    color: white;
-    font-family: unicode;
-    text-align: center;
-    margin-top: 50px;
- }
-.connectdiv{
-    color: white;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto auto;
-    grid-template-columns: auto auto auto;
-    margin-top: 60;
-    font-size: 150px;
-    border: 2px black;
-    font-family: unicode;
-}
-.connectdiv > div{
-    
+.mergery{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 20px;
-    text-align: center;
-    -webkit-box-shadow: 3px 5px 5px black;
-            box-shadow: 3px 5px 5px black;
-    background-color: rgb(88, 26, 88);
+}
+.mergery h2{
+    font-family: unicode;
+    font-size: 70px;
+    color: white;
+}
+.mergery h3{
+    font-family: unicode;
+    color: white;
+    margin-right: 80px;
 }
 .description{
-    font-size: medium;
+position: relative;
+left: 70px;
+top: 50px;
 }
-footer{
-    margin-top: 120px;
+.mergerdiv{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+.mergerdiv3 p{
+    position: relative;
+    bottom: 150px;
+    margin-left: 420px;
+    font-size: 30;
 }
 .fa-brands{
     font-size: 30px;
@@ -126,7 +126,7 @@ footer{
     transition: 1s;
     font-size: 33px;
 }
-.mergerdiv3{
+.mergerdiv{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -201,32 +201,32 @@ footer{
         font-size: 30px;
         color: white;
     }
-    .connectdiv{
-        color: white;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin-top: 60;
-        font-size: 150px;
-        border: 2px black;
-        font-family: unicode;
+    img{
+        width: 380px;
+        margin-right: 85px;
     }
-    .connectdiv > div{
-        
-        margin: 20px;
-        text-align: center;
-        -webkit-box-shadow: 3px 5px 5px black;
-                box-shadow: 3px 5px 5px black;
-        background-color: rgb(88, 26, 88);
-    }
-    main{
-        height: 1000px;
-    }
+    .mergery{
+        display: contents;
 
+    }
+    .description #h2{
+        font-family: unicode;
+        font-size: 25px;
+        color: white;
+        /* margin-right: 30px; */
+    }
+    .description #h3{
+        font-family: unicode;
+        color: white;
+        /* margin-right: 80px; */
+        font-size: 20px;
+    }
+    .description{
+        position: relative;
+        left: 10px;
+        bottom: 0px;
+        top: 0px;
+    }
 }
 @media (min-width:768px) and (max-width:1023px){
     .right-menu{
@@ -235,57 +235,10 @@ footer{
     .logo{
         margin-left: 100px;
     }
+    .description{
+        margin-right: 40px;
+    }
+    .description h2{
+        font-size: 60px;
+    }
 }
-
-#userInput {
-   position: relative;
-   right: 437px;
-   top: 20px;
-   padding-right: 40px;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   font-family: unicode;
-   font-size: 20;
-}
-
-#product{
-    list-style: none;
-}
-
-li{
-    position: relative;
-    right: 470px;
-    top: 10px;
-}
-
-li a{
-    color: white;
-    font-family: unicode;
-    text-decoration: none;
-}
-
-li a:hover{
-    text-decoration: underline;
-}
-.product{
-    margin-right: 40px;
-}
-#img1{
-    position: relative;
-    top: 20px;
-    right: 400px;
-} 
-#img2{
-    position: relative;
-    top: 20px;
-    right: 270px;
-} 
-#img3 {
-    position: relative;
-    top: 20px;
-    right: 140px;
-}
- .mergerdiv{
-    display: flex;
-    justify-content: flex-start;
-} 

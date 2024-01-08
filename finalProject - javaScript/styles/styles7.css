@@ -69,13 +69,12 @@ header{
         -ms-flex-direction: column;
             flex-direction: column;
 }
-
 .wrapper2{
     position: relative;
     top: 90px;
     left: 100px;
     width: 400px;
-    height: 440px;
+    height: 500px;
     background: transparent;
     border: 2px solid purple;
     border-radius: 20px;
@@ -97,16 +96,22 @@ header{
     transition: height .2s ease;
 }
 
-.wrapper2.active{
+/* .wrapper2.active{
     height: 520px;
-}
+} */
 
-.wrapper .form-box{
-    width: 100%;
+.wrapper2 .form-box-register{
+    width: 80%;
     padding: 40px;
 }
 
-.form-box-login{
+.wrapper2 h2{
+    text-align: center;
+    font-family: unicode;
+    color: white;
+}
+
+.form-box-register{
     /* display: none; */
     font-family: unicode;
     color: white;
@@ -135,7 +140,7 @@ header{
 
 .form-box-register h2{
     text-align: center;
-    margin-top:40px;
+    
 }
 
 .form-box h2{
@@ -213,28 +218,4 @@ header{
 }
 .login-register p a:hover{
     text-decoration: underline;
-}
-@media (min-width:320px) and (max-width:767px){
-    .wrapper2{
-        position: relative;
-        top: 90px;
-        left: 50px;
-        width: 400px;
-        height: 440px;
-    }
-    .wrapper{
-        width: 350px;
-        margin-left:90px;
-    }
-    .dropdown-menu{
-        visibility: hidden;
-        position: absolute;
-        min-width: 110px;
-        background-color: rgba(42, 13, 42, 0.734);
-        border-radius: 10px;
-    }
-    .dropdown-menu a{
-        display: block;
-        margin: 1.2px;
-    }
 }

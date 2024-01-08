@@ -6,15 +6,11 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
-
-@font-face {
-    font-family: myfont;
-    src: url(/fonts/_mtavruli.ttf);
-}
 @font-face {
     font-family: unicode;
     src: url(/fonts/3d_unicode.ttf);
 }
+
 body{
     background-color:rgb(57, 16, 57);
 }
@@ -80,36 +76,70 @@ header{
         -ms-flex-direction: column;
             flex-direction: column;
 }
- main h1{
-    color: white;
+.opinion{
+    width: 40%;
+    height: 50%;
+    position: relative;
+    left: 200px;
+    top: 50px;
     font-family: unicode;
+    color: aliceblue;
+}
+.opinion h1{
+    /* margin-left: 150px; */
+    background-color: purple;
     text-align: center;
-    margin-top: 50px;
- }
-.connectdiv{
-    color: white;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto auto;
-    grid-template-columns: auto auto auto;
-    margin-top: 60;
-    font-size: 150px;
-    border: 2px black;
+    margin-right: 90px;
+    padding: 3px;
+}
+.opinion #fname{
+    padding: 10px;
+    padding-right: 60px;
     font-family: unicode;
 }
-.connectdiv > div{
-    
-    margin: 20px;
-    text-align: center;
-    -webkit-box-shadow: 3px 5px 5px black;
-            box-shadow: 3px 5px 5px black;
-    background-color: rgb(88, 26, 88);
+.opinion #email{
+    padding: 10px;
+    padding-right: 60px;
+    font-family: 'Caveat', cursive;
 }
-.description{
-    font-size: medium;
+.opinion #submit{
+    font-family: unicode;
+    padding: 10;
+    padding-left: 220px;
+    padding-right: 220px;
+    background-color: rgb(91, 68, 113);
+}
+.mergerdiv5{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px;
+}
+.contact{
+    margin-left: 300px;
+    position: relative;
+    top: 50px;
+    color: aliceblue;
+    font-family: 'Caveat';
+}
+.contact h1{
+    font-family: 'Caveat';
+    background-color: purple;
+    text-align: center;
+}
+.contact h3{
+    font-family: unicode;
+    position: relative;
+    top: 20px;
+}
+.contact h4{
+    font-family: unicode;
+}
+.contact ul{
+    font-size: 25px;
 }
 footer{
-    margin-top: 120px;
+    margin-top: 0px;
 }
 .fa-brands{
     font-size: 30px;
@@ -157,6 +187,7 @@ footer{
     background-color: #581a58;
     padding: 10px;
     width: auto;
+    margin-top: 120px;
  }
  iframe{
     border-style: none;
@@ -201,32 +232,24 @@ footer{
         font-size: 30px;
         color: white;
     }
-    .connectdiv{
-        color: white;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin-top: 60;
-        font-size: 150px;
-        border: 2px black;
-        font-family: unicode;
+    .opinion{
+        display: none;
     }
-    .connectdiv > div{
-        
-        margin: 20px;
-        text-align: center;
-        -webkit-box-shadow: 3px 5px 5px black;
-                box-shadow: 3px 5px 5px black;
-        background-color: rgb(88, 26, 88);
+    .contact{
+        margin-left: 0px;
+        position: relative;
+        top: 110px;
+        left: 50px;
+        color: aliceblue;
+        font-family: 'Caveat';
+    }
+    footer{
+        position: relative;
+        bottom: 0px;
     }
     main{
-        height: 1000px;
+        height: 500px;
     }
-
 }
 @media (min-width:768px) and (max-width:1023px){
     .right-menu{
@@ -235,57 +258,17 @@ footer{
     .logo{
         margin-left: 100px;
     }
+    .mergerdiv5{
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            margin: 10px;
+    }
+    .opinion {
+        margin-right: 0px;
+        display: none;
+    }
+    .contact{
+        margin-left: 350px;
+    }
 }
-
-#userInput {
-   position: relative;
-   right: 437px;
-   top: 20px;
-   padding-right: 40px;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   font-family: unicode;
-   font-size: 20;
-}
-
-#product{
-    list-style: none;
-}
-
-li{
-    position: relative;
-    right: 470px;
-    top: 10px;
-}
-
-li a{
-    color: white;
-    font-family: unicode;
-    text-decoration: none;
-}
-
-li a:hover{
-    text-decoration: underline;
-}
-.product{
-    margin-right: 40px;
-}
-#img1{
-    position: relative;
-    top: 20px;
-    right: 400px;
-} 
-#img2{
-    position: relative;
-    top: 20px;
-    right: 270px;
-} 
-#img3 {
-    position: relative;
-    top: 20px;
-    right: 140px;
-}
- .mergerdiv{
-    display: flex;
-    justify-content: flex-start;
-} 
