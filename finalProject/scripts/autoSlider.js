@@ -19,5 +19,5 @@ function autoSlider() {
 
     slides[slideIndex-1].style.display = "block";
 
-    setTimeout(autoSlider, 3000); // ფუნქციის რეკურსიული გამოძახება
+    setTimeout(autoSlider, 3000); 
 };

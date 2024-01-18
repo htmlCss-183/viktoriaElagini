@@ -1,6 +1,6 @@
 <html lang="ka">
     <head>
-        <link rel="stylesheet" href="/viktoriaElagini/finalProject/styles/styles.css">
+        <link rel="stylesheet" href="/styles/style9.css"> 
         <title>GeoDance</title>
         <meta name="viewport" class="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -17,8 +17,16 @@
                 <div class="wrapper">
                      <div class="logo">
                          <h2>GeorgianDance.Ge</h2>
-                    
                     </div>
+                    <div class="right-menu">
+                        <button type="button" class="menu-button">მენიუ</button>
+                   <div class="dropdown-menu">
+                        <a href="/index2.html">მთავარი</a>
+                        <a href="/index3.html">ბლოგი</a>
+                        <a href="/index4.html">ჩვენს შესახებ</a>
+                        <a href="/index5.html">კონტაქტი</a>
+                        <a href="/index6.html">სერვისები</a>
+                   </div>
                 </div>
                 </div>
          </header>
@@ -26,10 +34,10 @@
             <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
             <div class="form-box-login">
                 <h2>შესვლა</h2>
-                <form onclick="Login()" action="index2.html" >
+                <form id="LoginOfForm">
                     <div class="input-box">
                         <span class="icon"><i class="fa-regular fa-envelope"></i></span>
-                        <input id="username" type="text" placeholder="username" required>
+                        <input id="inputEmail" type="text" placeholder="E-MAil" required>
                     </div>
                     <div class="input-box">
                         <span class="icon"><i class="fa-solid fa-lock"></i></span>
@@ -41,13 +49,15 @@
                         <a href="#">დაგავიწყდა პაროლი?</a>
                     </div>
                     <br>
-                    <button onclick="emptyInput()" type="submit" class="btn" >შესვლა</button>
+                    <input type="submit" value="შესვლა" id="submitButton" onclick="sign(event)">
+
+                    <!-- <button type="submit" class="btn" id="submit" onclick="sign(event)">შესვლა</button> -->
                     <div class="login-register">
-                        <p>არ გაქვს ექაუნთი? <a href="/index7.html" class="register-link">შექმენი აქ</a> </p>
+                        <p>არ გაქვს ექაუნთი? <a href="/index10.html" class="register-link">შექმენი აქ</a> </p>
                     </div>
                 </form>
             </div>
          </div>
-         <script src="/scripts/logIn.js"></script>
+         <script type="text/javascript" src="/scripts/logIn.js"></script>
     </body>
 </html>

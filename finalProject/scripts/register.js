@@ -1,18 +1,67 @@
+class UserRegistration {
+    constructor() {
+        this.inputForm = document.querySelector(".formOfInput");
+        this.emailInput = document.querySelector(".eMail");
+        this.passwordInput = document.querySelector(".password");
+        this.submitBtn = document.querySelector(".btn");
 
-const password = document.getElementById("pass");
-const form = document.querySelector("form");
-const username = document.getElementById('uname').value;
-
-form.addEventListener("submit", (e) => {
-    const errors = [];
-
-    if (password.value.length < 8) {
-        errors.push("Password is not valid, it must be at least 8 characters");
+        this.inputForm.addEventListener("submit", this.handleFormSubmit.bind(this));
     }
 
-    if (errors.length > 0) {
-        e.preventDefault(); // Prevent the form submission if there are errors
-        // You can handle the errors array here, for example, display error messages.
-        alert(errors.join("\n")); // Display error messages in an alert
+    handleFormSubmit(event) {
+        event.preventDefault();
+
+        const emailValue = this.emailInput.value;
+        const passwordValue = this.passwordInput.value;
+
+        if (this.validateEmail(emailValue) && this.validatePassword(passwordValue)) {
+
+            if (!this.isUserExist(emailValue)) {
+                const users = this.getUsers();
+                users.push({ email: emailValue, password: passwordValue });
+                this.saveUsers(users);
+
+                alert("შენი მონაცემები შენახულია!");
+
+                this.emailInput.value = "";
+                this.passwordInput.value = "";
+            } else {
+                alert("მეილი უკვე გამოყენებულია... სხვა სცადეთ!");
+            }
+
+        } else {
+            alert("პაროლი უნდა შედგებოდეს მინიმუმ 8 სიმბოლოსგან,დიდი ასოსგან და რიცხვისგან");
+        }
     }
-});
+
+    validateEmail(email) {
+        const emailRegex = /^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$/;
+        return emailRegex.test(email);
+    }
+
+    validatePassword(password) {
+        const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\S{8,}$/;
+        return passwordRegex.test(password);
+    }
+
+    getUsers() {
+        const storedUsers = localStorage.getItem("users");
+
+        if (storedUsers) {
+            return JSON.parse(storedUsers);
+        } else {
+            return [];
+        }
+    }
+
+    saveUsers(users) {
+        localStorage.setItem("users", JSON.stringify(users));
+    }
+
+    isUserExist(email) {
+        const users = this.getUsers();
+        return users.some((user) => user.email === email);
+    }
+}
+
+const userRegistration = new UserRegistration();

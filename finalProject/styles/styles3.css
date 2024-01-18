@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
 @font-face {
     font-family: unicode;
-    src: url(/viktoriaElagini/finalProject/fonts/3d_unicode.ttf);
+    src: url(/fonts/3d_unicode.ttf);
 }
 body{
     background-color:rgb(57, 16, 57);
@@ -224,7 +224,7 @@ article h1{
     width: 1200px;
     height: 700px;
     display: block;
-    position: absolute;
+    /* position: absolute; */
     left: 160px;
     /* top: 110px; */
     -webkit-filter: blur(2px);
@@ -238,7 +238,7 @@ article h1{
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
 }
-@-webkit-keyframes slider2{
+/* @-webkit-keyframes slider2{
     0%{
         background: url(/images/ერისიონი1.jpg);
     }
@@ -257,7 +257,7 @@ article h1{
     100%{
         background: url(/images/ერისიონი6.jpg);
     }
-}
+} */
 @keyframes slider2{
     0%{
         background: url(/images/ერისიონი1.jpg);
@@ -310,6 +310,7 @@ article h1{
     -ms-grid-columns: auto 30px auto 30px  auto;
     grid-template-columns: auto auto  auto;
     margin-left: 30px;
+    margin-top: 70px;
     gap:30px;
 }
 #jemal{
@@ -604,6 +605,14 @@ article h1{
 
 }
 
+.erisionistory h3{
+    margin-top: 150px;
+}
+
+.erisionistory h1{
+   position: relative;
+   top: 130px;
+}
 
 @media (min-width:768px) and (max-width:1023px){
     .right-menu{
@@ -674,7 +683,7 @@ article h1{
         position: relative;
         color: aliceblue;
         display: block;
-        top: 560px;
+        top: 600px;
         left: 8px;
         width: 100%;
         font-size: 45px;
@@ -685,9 +694,9 @@ article h1{
     }
     .imgdescr2 h6{
         position: relative;
-        color: aliceblue;
+        color: rgb(1, 1, 1);
         display: block;
-        top: 480px;
+        top: 100px;
         left: 10px;
         width: 50%;
         font-size: 25px;
@@ -705,4 +714,75 @@ article h1{
         right: 50px;
         bottom: 180px;
     }
+}
+.slideshow-container {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.erisioniimg {
+    display: none;
+}
+
+.previous {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -25px;
+    padding: 18px;
+    color: rgb(123, 9, 106);
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+}
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -25px;
+    padding: 18px;
+    color: rgb(123, 9, 106);
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+}
+.next {
+    left: 1140;
+    border-radius: 4px 0 0 4px;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 4px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activeDot, .dot:hover {
+    background-color: antiquewhite;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1;}
 }

@@ -1,6 +1,6 @@
 <html lang="ka">
     <head>
-        <link rel="stylesheet" href="/styles/styles7.css">
+        <link rel="stylesheet" href="/styles/style10.css">
         <title>GeoDance</title>
         <meta name="viewport" class="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -18,11 +18,21 @@
                      <div class="logo">
                          <h2>GeorgianDance.Ge</h2>
                     </div>
+                    <div class="right-menu">
+                        <button type="button" class="menu-button">მენიუ</button>
+                   <div class="dropdown-menu">
+                        <a href="/index2.html">მთავარი</a>
+                        <a href="/index3.html">ბლოგი</a>
+                        <a href="/index4.html">ჩვენს შესახებ</a>
+                        <a href="/index5.html">კონტაქტი</a>
+                        <a href="/index6.html">სერვისები</a>
+                        <a href="/index9.html">შესვლა</a>
+                   </div>
                 </div>
                 </div>
          </header>
          <div class="wrapper2">
-            <form action="#">
+            <form class="formOfInput">
                 <h2>რეგისტრაცია</h2>
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-user"></i></i></span>
@@ -30,23 +40,23 @@
                 </div>
                 <div class="input-box">
                     <span class="icon"><i class="fa-regular fa-envelope"></i></span>
-                    <input id="email" type="email" placeholder="email" required>
+                    <input class="eMail" id="email" type="email" placeholder="email" required>
                 </div>
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                    <input id="pass" type="password" placeholder="passowrd" required >
+                    <input class="password" id="pass" type="password" placeholder="passowrd" required >
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">დამიმახსოვრე</label>
                 </div>
                 <br>
-                <button onclick="handleRegistration()" type="submit" class="btn">რეგისტრაცია</button>
+                <button type="submit" class="btn">რეგისტრაცია</button>
                 <br>
                 <br>
                 <div class="login-register">
                     <p>
                         უკვე გაქვს ანგარიში?
-                        <a href="/index.html" class="register-link">შესვლა</a>
+                        <a href="/index9.html" class="register-link">შესვლა</a>
                     </p>
                 </div>
                 <p id="result"></p>

@@ -1,6 +1,6 @@
 <html lang="ka">
     <head>
-        <link rel="stylesheet" href="/viktoriaElagini/finalProject/styles/styles6.css">
+        <link rel="stylesheet" href="/styles/styles6.css">
         <title>GeoDance</title>
         <meta name="viewport" class="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -27,6 +27,7 @@
                          <a href="/index4.html">ჩვენს შესახებ</a>
                          <a href="/index5.html">კონტაქტი</a>
                          <a href="/index6.html">სერვისები</a>
+                         <a href="/index9.html">შესვლა</a>
                     </div>
                     </div>
                     </div>
@@ -49,8 +50,11 @@
          <main>
             <div class="mergerdiv">
             <div class="product">
-                <input type="text" id="userInput" placeholder="მოძებნე პროდუქტი" title="Search by name" onkeyup="searchContact()">
-            <ul id="product">
+                <input type="search" id="userInput" placeholder="მოძებნე მოცეკვავე" title="Search by name">
+                <div id="result"></div>
+                <script src="/scripts/filterAPI.js"></script>
+            <!-- <ul id="product">
+                <script src="/scripts/filter.js"></script>
                 <li><a href="https://brandsaukune.ge/product/%E1%83%AA%E1%83%94%E1%83%99%E1%83%95%E1%83%98%E1%83%A1-%E1%83%A9%E1%83%A3%E1%83%A1%E1%83%A2%E1%83%98/">ცეკვის ჩუსტები</a></li>
                 <li><a href="https://brandsaukune.ge/product/%e1%83%92%e1%83%9d%e1%83%92%e1%83%9d%e1%83%a1-%e1%83%a5%e1%83%90%e1%83%9b%e1%83%90%e1%83%a0%e1%83%98/">ქამარი</a></li>
     
@@ -63,7 +67,7 @@
                 <li><a href="https://brandsaukune.ge/product/%e1%83%aa%e1%83%94%e1%83%99%e1%83%95%e1%83%98%e1%83%a1-%e1%83%91%e1%83%9d%e1%83%a2%e1%83%90%e1%83%a1%e1%83%98-2/">ბოტასი</a></li>
                 <li><a href="https://brandsaukune.ge/product/%E1%83%AA%E1%83%94%E1%83%99%E1%83%95%E1%83%98%E1%83%A1-%E1%83%A4%E1%83%AE%E1%83%A1%E1%83%90%E1%83%AA%E1%83%9B%E1%83%94%E1%83%9A%E1%83%98/">ფეხსაცმელი</a></li>
     
-            </ul>
+            </ul> -->
         </div>
         <div class="images">
             <img id="img1" width="240px" src="https://brandsaukune.ge/wp-content/uploads/2022/05/279831551_328737312546163_4080762456606856520_n.jpg">
