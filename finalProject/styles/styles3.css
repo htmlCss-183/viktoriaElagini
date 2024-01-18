@@ -1,0 +1,788 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
+@font-face {
+    font-family: unicode;
+    src: url(/fonts/3d_unicode.ttf);
+}
+body{
+    background-color:rgb(57, 16, 57);
+}
+header{
+    height:80px;
+    background-color: rgb(88, 26, 88);
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    font-size: 20;
+    position: relative;
+    bottom:13px;
+    font-family: 'Caveat', cursive;
+    /* text-shadow: 1px 2px 4px; */
+    color: white;
+    
+}
+.menu-button{
+    background-color: transparent;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border:none;
+    font-family: unicode;
+    font-weight: 600;
+    color: white;
+}
+.loginbutton{
+    margin-left: 90px;
+}
+.right-menu{
+    position: relative;
+    float: right;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    min-width: 110px;
+    z-index: 1;
+    background-color: rgba(42, 13, 42, 0.734);
+    border-radius: 10px;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    margin: 3px;
+    font-family: unicode;
+    color:rgb(255, 255, 255);
+}
+.dropdown-menu a:hover{
+    text-shadow: 3px 3px 3px rgb(255, 255, 255);
+    font-weight: 600;
+}
+.right-menu:hover .dropdown-menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.sukhimg{
+    width: 1200px;
+    height: 700px;
+    display: block;
+    position: absolute;
+    left: 160px;
+    top: 110px;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    -webkit-animation-name: slider;
+            animation-name: slider;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    
+}
+/* @-webkit-keyframes slider{
+    0%{
+        background: url(/images/3.jpg);
+    }
+    20%{
+        background: url(/images/8.jpg);
+    }
+    40%{
+        background: url(/images/4.jpg);
+    }
+    60%{
+        background: url(/images/6.jpg);
+    }
+    80%{
+        background: url(/images/7.jpg);
+    }
+    100%{
+        background: url(/images/1.jpg);
+    }
+}
+@keyframes slider{
+    0%{
+        background: url(/images/3.jpg);
+    }
+    20%{
+        background: url(/images/8.jpg);
+    }
+    40%{
+        background: url(/images/4.jpg);
+    }
+    60%{
+        background: url(/images/6.jpg);
+    }
+    80%{
+        background: url(/images/7.jpg);
+    }
+    100%{
+        background: url(/images/1.jpg);
+    }
+} */
+.imgdescription h2{
+    position: absolute;
+    color: aliceblue;
+    display: block;
+    top: 600px;
+    left: 160px;
+    font-size: 70px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.imgdescription h2::first-letter{
+    font-size:100px ;
+}
+.imgdescription h6{
+    position: absolute;
+    color: aliceblue;
+    display: block;
+    top: 700px;
+    left: 160px;
+    font-size: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+article{
+    margin-top: 700px;
+    margin-left: 160px;
+    margin-right: 150px;
+    font-family: unicode;
+    color: white;
+}
+
+#learnmore {
+    position: relative;
+    bottom: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+article h1{
+    font-size: 30px;
+    position: relative;
+    top: 40px;
+}
+.ilikonino #img1{
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+.ilikonino #img2{
+    height: 240px;
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+.ilikonino #vid1{
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+.mergerdiv #img3{
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+.mergerdiv #img4{
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+.mergerdiv #img5{
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+.ilikonino{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 150px auto 150px  auto;
+    grid-template-columns: auto auto  auto;
+    margin-left: 30px;
+    gap:150px;
+}
+.ilikonino iframe{
+    border-style: none;
+}
+.mergerdiv{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 30px auto 30px  auto;
+    grid-template-columns: auto auto  auto;
+    margin-left: 30px;
+    gap:30px;
+}
+.erisioniimg{
+    width: 1200px;
+    height: 700px;
+    display: block;
+    /* position: absolute; */
+    left: 160px;
+    /* top: 110px; */
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    -webkit-animation-name: slider2;
+            animation-name: slider2;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+/* @-webkit-keyframes slider2{
+    0%{
+        background: url(/images/ერისიონი1.jpg);
+    }
+    20%{
+        background: url(/images/ერისიონი2.jpg);
+    }
+    40%{
+        background: url(/images/ერისიონი3.jpg);
+    }
+    60%{
+        background: url(/images/ერისიონი4.jpg);
+    }
+    80%{
+        background: url(/images/ერისიონი5.jpg);
+    }
+    100%{
+        background: url(/images/ერისიონი6.jpg);
+    }
+} */
+@keyframes slider2{
+    0%{
+        background: url(/images/ერისიონი1.jpg);
+    }
+    20%{
+        background: url(/images/ერისიონი2.jpg);
+    }
+    40%{
+        background: url(/images/ერისიონი3.jpg);
+    }
+    60%{
+        background: url(/images/ერისიონი4.jpg);
+    }
+    80%{
+        background: url(/images/ერისიონი5.jpg);
+    }
+    100%{
+        background: url(/images/ერისიონი6.jpg);
+    }
+}
+.imgdescr2 h2{
+    position: relative;
+    color: aliceblue;
+    display: block;
+    top: 480px;
+    left: 150px;
+    width: 50%;
+    font-size: 70px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.imgdescr2 h2::first-letter{
+    font-size:100px ;
+}
+.imgdescr2 h6{
+    position: relative;
+    color: aliceblue;
+    display: block;
+    top: 372px;
+    left: 150px;
+    width: 50%;
+    font-size: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.article2{
+    margin-top: 300px;
+}
+.revazjemal{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 30px auto 30px  auto;
+    grid-template-columns: auto auto  auto;
+    margin-left: 30px;
+    margin-top: 70px;
+    gap:30px;
+}
+#jemal{
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+#revaz{
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+#erisionilogo{
+    -webkit-box-shadow: 2px 5px 5px black;
+            box-shadow: 2px 5px 5px black;
+}
+.mergerdiv3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+.mergerdiv3 p{
+    position: relative;
+    bottom: 150px;
+    margin-left: 420px;
+    font-size: 30;
+}
+.fa-brands{
+    font-size: 30px;
+    color: purple;
+    margin: 5px;
+}
+.fa-brands:hover{
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    color: white;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    font-size: 33px;
+}
+.mergerdiv4{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.lastmenu a{
+    text-decoration: none;
+    color: white;
+    margin:10px;
+    font-family: unicode;
+    font-weight: 600;
+}
+.lastmenu a:hover{
+    text-shadow: 1px 2px 2px rgb(255, 0, 247);
+}
+.lastp p{
+    color: aliceblue;
+    font-family: caveat;
+}
+ footer{
+    background-color: #581a58;
+    padding: 10px;
+    width: auto;
+ }
+ iframe{
+    border-style: none;
+    -webkit-box-shadow: 5px 8px 8px ;
+            box-shadow: 5px 8px 8px ;
+ }
+ #noneimage{
+    position:relative;
+    top: 40px;
+    display: none;
+ }
+ #noneimg2{
+    display: none;
+ }
+ .mob-container{
+    visibility: hidden;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    main{
+        height:5600px;
+    }
+    .wrapper{
+        width: 300px;
+        margin:10px;
+    }
+    .right-menu{
+        display: none;
+    }
+    .mob-container{
+        visibility: visible;
+        max-width: 100px;
+        margin: auto;  
+        border-radius: 10px;
+    }
+    .mainNav #navLinks a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: unicode;
+        margin-left: 200px;
+        max-width: 480px;
+        font-size: 20px;
+        color: white;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        right: 50;
+        top: 28;
+        font-size: 30px;
+        color: white;
+    }
+    .sukhimg{
+        display: none;
+    }
+    .imgdescription h2{
+        position: absolute;
+        color: aliceblue;
+        display: block;
+        top: 350px;
+        left: 10px;
+        font-size: 30px;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    .imgdescription h2::first-letter{
+        font-size:40px ;
+    }
+    .imgdescription h6{
+        position: absolute;
+        color: aliceblue;
+        display: block;
+        top: 360px;
+        left: 10px;
+        font-size: 25px;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    article{
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 0px;
+        font-family: unicode;
+        color: white;
+    }
+    article h1{
+        font-size: 40px;
+    }
+    .ilikonino #img1{
+        width: 300px;
+        -webkit-box-shadow: 2px 5px 5px black;
+                box-shadow: 2px 5px 5px black;
+    }
+    .ilikonino #img2{
+        display: none;
+    }
+    .ilikonino #vid1{
+        position: relative;
+        bottom: 100px;
+        width: 300px;
+        height: 200;
+        -webkit-box-shadow: 2px 5px 5px black;
+                box-shadow: 2px 5px 5px black;
+    }
+    #noneimage{
+        display: block;
+        position: relative;
+        bottom: 70px;
+    }
+    .mergerdiv #img3{
+        -webkit-box-shadow: 2px 5px 5px black;
+                box-shadow: 2px 5px 5px black;
+    }
+    .mergerdiv #img4{
+        -webkit-box-shadow: 2px 5px 5px black;
+                box-shadow: 2px 5px 5px black;
+    }
+    .mergerdiv #img5{
+        -webkit-box-shadow: 2px 5px 5px black;
+                box-shadow: 2px 5px 5px black;
+    }
+    .ilikonino{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-left: 75px;
+    }
+    #iliko{
+        position: relative;
+        bottom: 100px;
+    }
+    .ilikonino iframe{
+        border-style: none;
+    }
+    .mergerdiv{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: relative;
+        bottom: 330px;
+    }
+    .sukhhistory #h3{
+        position: relative;
+        bottom: 100px;
+        
+    }
+
+
+    .erisioniimg{
+        display: none;
+    }
+    #noneimg2{
+        display: block;
+        position: relative;
+        bottom: 200px;
+    }
+    .imgdescr2 h2{
+        display: none;
+    }
+    .imgdescr2 h6{
+        display: none;
+    }
+    .article2{
+        margin-top: 0px;
+    }
+    .revazjemal{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: relative;
+        bottom: 200px;
+    }
+    #jemal{
+        -webkit-box-shadow: 2px 5px 5px black;
+                box-shadow: 2px 5px 5px black;
+    }
+    #revaz{
+        -webkit-box-shadow: 2px 5px 5px black;
+                box-shadow: 2px 5px 5px black;
+    }
+    #erisionilogo{
+        -webkit-box-shadow: 2px 5px 5px black;
+                box-shadow: 2px 5px 5px black;
+        position: relative;
+    }
+    .mergerdiv3{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-left: 90px;
+        position: relative;
+        bottom: 250px;
+    }
+    .mergerdiv3 p{
+        display: none;
+    }
+    .erisionistory{
+        position: relative;
+        bottom: 200px;
+    }
+    #hh3{
+        position: relative;
+        bottom: 270px;
+    }
+
+}
+
+.erisionistory h3{
+    margin-top: 150px;
+}
+
+.erisionistory h1{
+   position: relative;
+   top: 130px;
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .right-menu{
+        margin-right: 100px;
+    }
+    .logo{
+        margin-left: 100px;
+    }
+    .sukhimg{
+        width: 980px;
+        height: 700px;
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 110px;
+    }
+    .imgdescription h2{
+        position: absolute;
+        color: aliceblue;
+        display: block;
+        top: 680px;
+        left: 10px;
+        font-size: 45px;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    .imgdescription h2::first-letter{
+        font-size:55px ;
+    }
+    .imgdescription h6{
+        position: absolute;
+        color: aliceblue;
+        display: block;
+        top: 720px;
+        left: 10px;
+        font-size: 25px;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    article{
+        margin-top: 700px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-family: unicode;
+        color: white;
+    }
+    .ilikonino{
+        gap:50px;
+    }
+    .mergerdiv{
+        gap: 20px;
+        margin-left: px;
+    }
+    #img3{
+        width: 280px;
+    }
+    #img4{
+        width: 280px;
+    }
+    #img5{
+        width: 280px;
+    }
+    .erisioniimg{
+        width: 980px;
+        height: 700px;
+        position: absolute;
+        left: 10px;
+    }
+    .imgdescr2 h2{
+        position: relative;
+        color: aliceblue;
+        display: block;
+        top: 600px;
+        left: 8px;
+        width: 100%;
+        font-size: 45px;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    .imgdescr2 h2::first-letter{
+        font-size:55px ;
+    }
+    .imgdescr2 h6{
+        position: relative;
+        color: rgb(1, 1, 1);
+        display: block;
+        top: 100px;
+        left: 10px;
+        width: 50%;
+        font-size: 25px;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    .article2{
+        margin-top: 390px;
+    }
+    #hh3{
+        position: relative;
+        bottom: 35px;
+    }
+    #pp{
+        position: relative;
+        right: 50px;
+        bottom: 180px;
+    }
+}
+.slideshow-container {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.erisioniimg {
+    display: none;
+}
+
+.previous {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -25px;
+    padding: 18px;
+    color: rgb(123, 9, 106);
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+}
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -25px;
+    padding: 18px;
+    color: rgb(123, 9, 106);
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+}
+.next {
+    left: 1140;
+    border-radius: 4px 0 0 4px;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 4px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activeDot, .dot:hover {
+    background-color: antiquewhite;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: 0.3}
+    to {opacity: 1;}
+}

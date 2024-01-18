@@ -1,0 +1,295 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+@font-face {
+    font-family: myfont;
+    src: url(/fonts/_mtavruli.ttf);
+}
+@font-face {
+    font-family: unicode;
+    src: url(/fonts/3d_unicode.ttf);
+}
+body{
+    background-color:rgb(57, 16, 57);
+}
+header{
+    height:80px;
+    background-color: rgb(88, 26, 88);
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    font-size: 20;
+    position: relative;
+    bottom:13px;
+    font-family: 'Caveat', cursive;
+    /* text-shadow: 1px 2px 4px; */
+    color: white;
+    
+}
+.menu-button{
+    background-color: transparent;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border:none;
+    font-family: unicode;
+    font-weight: 600;
+    color: white;
+}
+.loginbutton{
+    margin-left: 90px;
+}
+.right-menu{
+    position: relative;
+    float: right;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    min-width: 110px;
+    z-index: 1;
+    background-color: rgba(42, 13, 42, 0.734);
+    border-radius: 10px;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    margin: 3px;
+    font-family: unicode;
+    color:rgb(255, 255, 255);
+}
+.dropdown-menu a:hover{
+    text-shadow: 3px 3px 3px rgb(255, 255, 255);
+    font-weight: 600;
+}
+.right-menu:hover .dropdown-menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+ main h1{
+    color: white;
+    font-family: unicode;
+    text-align: center;
+    margin-top: 50px;
+ }
+.connectdiv{
+    color: white;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
+    margin-top: 60;
+    font-size: 150px;
+    border: 2px black;
+    font-family: unicode;
+}
+.connectdiv > div{
+    
+    margin: 20px;
+    text-align: center;
+    -webkit-box-shadow: 3px 5px 5px black;
+            box-shadow: 3px 5px 5px black;
+    background-color: rgb(88, 26, 88);
+}
+.description{
+    font-size: medium;
+}
+footer{
+    margin-top: 120px;
+}
+.fa-brands{
+    font-size: 30px;
+    color: purple;
+    margin: 5px;
+}
+.fa-brands:hover{
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    color: white;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    font-size: 33px;
+}
+.mergerdiv3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.lastmenu a{
+    text-decoration: none;
+    color: white;
+    margin:10px;
+    font-family: unicode;
+    font-weight: 600;
+}
+.lastmenu a:hover{
+    text-shadow: 1px 2px 2px rgb(255, 0, 247);
+}
+.lastp p{
+    color: aliceblue;
+    font-family: caveat;
+}
+ footer{
+    background-color: #581a58;
+    padding: 10px;
+    width: auto;
+ }
+ iframe{
+    border-style: none;
+    -webkit-box-shadow: 5px 8px 8px ;
+            box-shadow: 5px 8px 8px ;
+ }
+ .mob-container{
+    visibility: hidden;
+ }
+ @media (min-width:320px) and (max-width:767px){
+    main{
+        height:5600px;
+    }
+    .wrapper{
+        width: 300px;
+        margin:10px;
+    }
+    .right-menu{
+        display: none;
+    }
+    .mob-container{
+        visibility: visible;
+        max-width: 100px;
+        margin: auto;  
+        border-radius: 10px;
+    }
+    .mainNav #navLinks a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: unicode;
+        margin-left: 200px;
+        max-width: 480px;
+        font-size: 20px;
+        color: white;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        right: 50;
+        top: 28;
+        font-size: 30px;
+        color: white;
+    }
+    .connectdiv{
+        color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 60;
+        font-size: 150px;
+        border: 2px black;
+        font-family: unicode;
+    }
+    .connectdiv > div{
+        
+        margin: 20px;
+        text-align: center;
+        -webkit-box-shadow: 3px 5px 5px black;
+                box-shadow: 3px 5px 5px black;
+        background-color: rgb(88, 26, 88);
+    }
+    main{
+        height: 1000px;
+    }
+
+}
+@media (min-width:768px) and (max-width:1023px){
+    .right-menu{
+        margin-right: 100px;
+    }
+    .logo{
+        margin-left: 100px;
+    }
+}
+
+#userInput {
+   position: relative;
+   right: 437px;
+   top: 20px;
+   padding-right: 40px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-family: unicode;
+   font-size: 20;
+}
+
+#product{
+    list-style: none;
+}
+
+li{
+    position: relative;
+    right: 470px;
+    top: 10px;
+}
+
+li a{
+    color: white;
+    font-family: unicode;
+    text-decoration: none;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+.product{
+    margin-right: 40px;
+}
+#img1{
+    position: relative;
+    top: 20px;
+    right: 400px;
+} 
+#img2{
+    position: relative;
+    top: 20px;
+    right: 270px;
+} 
+#img3 {
+    position: relative;
+    top: 20px;
+    right: 140px;
+}
+ .mergerdiv{
+    display: flex;
+    justify-content: flex-start;
+} 
+
+.myCustomFont {
+    font-family: 'Caveat' ;
+}

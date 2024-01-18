@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+@font-face {
+    font-family: myfont;
+    src: url(/fonts/_mtavruli.ttf);
+}
+@font-face {
+    font-family: unicode;
+    src: url(/fonts/3d_unicode.ttf);
+}
+body{
+    background-color:rgb(57, 16, 57);
+}
+header{
+    height:80px;
+    background-color: rgb(88, 26, 88);
+}
+.wrapper{
+    width: 1000px;
+    margin:  auto;
+}
+.logo{
+    float: left;
+    font-size: 20;
+    position: relative;
+    bottom:13px;
+    font-family: 'Caveat', cursive;
+    /* text-shadow: 1px 2px 4px; */
+    color: white;
+    
+}
+.menu-button{
+    background-color: transparent;
+    padding: 15px;
+    font-size: 20px;
+    border:none;
+    font-family: unicode;
+    font-weight: 600;
+    color: white;
+}
+.right-menu{
+    position: relative;
+    float: right;
+}
+.dropdown-menu{
+    visibility: hidden;
+    position: absolute;
+    min-width: 110px;
+    background-color: rgba(42, 13, 42, 0.734);
+    border-radius: 10px;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    margin: 5px;
+    font-family: unicode;
+    color:rgb(255, 255, 255);
+}
+.dropdown-menu a:hover{
+    text-shadow: 3px 3px 3px rgb(255, 255, 255);
+    font-weight: 600;
+}
+.right-menu:hover .dropdown-menu{
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.wrapper2{
+    position: relative;
+    top: 90px;
+    left: 100px;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid purple;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    -webkit-box-shadow: 0 0 30px black;
+            box-shadow: 0 0 30px black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: caveat;
+    overflow: hidden;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    font-family: unicode;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+    font-size: 23;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: rgb(229, 226, 226);
+    font-size: 18;
+    font-family: 'Caveat';
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: rgb(254, 254, 254);
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.remember-forgot{
+    font-size: .9em;
+    color: rgb(255, 253, 253);
+    font-weight: 500;
+    font-family:unicode;
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: rgb(125, 122, 122);
+}
+.remember-forgot a:hover{
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: purple;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: unicode;
+    font-size: 1em;
+}
+.login-register{
+    font-size: .9em;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    font-family: unicode;
+}
+.login-register p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 25px;
+    font-family:unicode;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+@media (min-width:320px) and (max-width:767px){
+    .wrapper2{
+        position: relative;
+        top: 90px;
+        left: 50px;
+        width: 400px;
+        height: 440px;
+    }
+    .wrapper{
+        width: 350px;
+        margin-left:90px;
+    }
+    .dropdown-menu{
+        visibility: hidden;
+        position: absolute;
+        min-width: 110px;
+        background-color: rgba(42, 13, 42, 0.734);
+        border-radius: 10px;
+    }
+    .dropdown-menu a{
+        display: block;
+        margin: 1.2px;
+    }
+}
